@@ -1,0 +1,8 @@
+encrypt:
+  key: spongebob #对称加密key
+spring:
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: ${management.context-path}/health
+        healthCheckInterval: 15s             #健康检查
